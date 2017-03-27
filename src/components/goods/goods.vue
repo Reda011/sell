@@ -101,6 +101,7 @@
                 //console.log(this.goods);
               };
             });
+            this.$root.eventHub.$on('cart.add',(target)=> {this._drop(target)});
             this.classMap=['decrease','discount','guarantee','invoice','special'];
         },
         methods: {
